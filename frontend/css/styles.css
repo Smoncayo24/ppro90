@@ -376,127 +376,6 @@ body {
   border-radius: 5px;
 }
 
-/* PARTIDOS DISPONIBLES */
-
-.matches-title{
-
-  margin-top:120px;
-
-  text-align:center;
-
-  color:white;
-
-  font-size:60px;
-
-  line-height:1;
-}
-
-/* TABS */
-
-.tabs{
-
-  width:100%;
-
-  display:flex;
-
-  justify-content:center;
-
-  gap:20px;
-
-  margin-top:20px;
-}
-
-.tabs button{
-
-  padding:12px 25px;
-
-  border:none;
-
-  border-radius:10px;
-
-  background:#d9d9d9;
-
-  cursor:pointer;
-
-  font-weight:bold;
-
-  font-size:16px;
-}
-
-.active-tab{
-
-  background:#6ab04c !important;
-
-  color:white;
-}
-
-/* GRID */
-
-.matches-grid{
-
-  width:90%;
-
-  margin:40px auto;
-
-  display:grid;
-
-  grid-template-columns:repeat(4,1fr);
-
-  gap:25px;
-}
-
-/* CARD */
-
-.match-card{
-
-  background:rgba(255,255,255,0.45);
-
-  backdrop-filter:blur(10px);
-
-  border-radius:20px;
-
-  padding:20px;
-
-  display:flex;
-
-  flex-direction:column;
-
-  gap:10px;
-}
-
-.match-card h2{
-
-  font-size:28px;
-
-  letter-spacing:3px;
-}
-
-.match-card p{
-
-  font-weight:bold;
-
-  font-size:14px;
-}
-
-.location-button{
-
-  margin-top:10px;
-
-  width:100%;
-
-  padding:10px;
-
-  border:none;
-
-  border-radius:10px;
-
-  background:#e8e8e8;
-
-  cursor:pointer;
-
-  font-size:22px;
-}
-
 /* RESPONSIVE */
 
 @media(max-width:1200px){
@@ -520,24 +399,24 @@ body {
   }
 }
 
-
-/* comentarios - perfil */
+/* perfil */
 
 .profile-title{
   position:absolute;
-  top:95px;
-  left:42%;
+  top:100px;
+  width:100%;
+  text-align:center;
   color:white;
   font-size:45px;
 }
 
 .perfil-container{
   width:80%;
-  margin:130px auto 0;
+  margin:150px auto 0;
   display:flex;
   justify-content:center;
-  gap:80px;
   align-items:center;
+  gap:80px;
 }
 
 .perfil-left{
@@ -548,8 +427,8 @@ body {
 }
 
 .perfil-img{
-  width:220px;
-  height:220px;
+  width:210px;
+  height:210px;
   border-radius:50%;
   object-fit:cover;
   background:white;
@@ -557,214 +436,131 @@ body {
 
 .perfil-stats{
   display:flex;
-  gap:15px;
+  gap:20px;
 }
 
 .perfil-stats button,
 .rating,
 .edit-btn{
   border:none;
-  border-radius:12px;
+  border-radius:14px;
   padding:10px 18px;
-  cursor:pointer;
+  background:white;
   font-weight:bold;
+  cursor:pointer;
+}
+
+.rating{
+  width:260px;
 }
 
 .perfil-right{
-  width:420px;
+  width:430px;
   color:white;
 }
 
 .perfil-right h2{
-  font-size:32px;
+  font-size:30px;
   font-style:italic;
   margin-bottom:10px;
 }
 
 .edit-btn{
   margin-bottom:20px;
+  font-size:12px;
 }
 
 .perfil-card{
-  background:rgba(255,255,255,0.75);
-  color:black;
-  padding:20px;
-  border-radius:18px;
-  margin-bottom:20px;
-  font-weight:bold;
-}
-
-/* COMENTARIOS */
-
-.comments-container{
-  width:80%;
-  margin:130px auto 0;
-  display:flex;
-  justify-content:space-around;
-  align-items:center;
-}
-
-.comments-box{
-  width:420px;
-  height:320px;
   background:rgba(255,255,255,0.8);
-  border-radius:20px;
-  padding:35px;
-}
-
-.comment-line{
-  height:25px;
-  background:#e8dddd;
-  border-radius:20px;
-  margin-bottom:22px;
-}
-
-.comments-title{
-  background:rgba(255,255,255,0.35);
-  backdrop-filter:blur(10px);
+  color:black;
+  padding:18px;
   border-radius:18px;
-  padding:55px;
-}
-
-.comments-title h2{
-  letter-spacing:6px;
-  line-height:1.5;
-}
-
-.volver-btn{
-  position:absolute;
-  bottom:90px;
-  left:50%;
-  transform:translateX(-50%);
-  width:230px;
-  padding:15px;
-  border:none;
-  border-radius:18px;
+  margin-bottom:18px;
   font-weight:bold;
-  letter-spacing:5px;
-  cursor:pointer;
+  line-height:1.3;
 }
 
-/* perfil comentarios */
+/* PARTIDOS DISPONIBLES */
 
-.profile-title{
+.matches-title{
   position:absolute;
   top:95px;
-  left:42%;
+  width:100%;
+  text-align:center;
   color:white;
-  font-size:45px;
-}
-
-.perfil-container{
-  width:80%;
-  margin:130px auto 0;
-  display:flex;
-  justify-content:center;
-  gap:80px;
-  align-items:center;
-}
-
-.perfil-left{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:18px;
-}
-
-.perfil-img{
-  width:220px;
-  height:220px;
-  border-radius:50%;
-  object-fit:cover;
-  background:white;
-}
-
-.perfil-stats{
-  display:flex;
-  gap:15px;
-}
-
-.perfil-stats button,
-.rating,
-.edit-btn{
-  border:none;
-  border-radius:12px;
-  padding:10px 18px;
-  cursor:pointer;
+  font-size:44px;
+  line-height:1.1;
   font-weight:bold;
 }
 
-.perfil-right{
-  width:420px;
+.tabs{
+  position:absolute;
+  top:230px;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  gap:35px;
+}
+
+.tabs button{
+  padding:13px 32px;
+  border:none;
+  border-radius:8px;
+  background:#e5e5e5;
+  color:#3d9635;
+  font-size:16px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.tabs .active-tab{
+  background:#4caf50;
   color:white;
 }
 
-.perfil-right h2{
-  font-size:32px;
-  font-style:italic;
+.matches-grid{
+  width:78%;
+  margin:285px auto 0;
+  display:grid;
+  grid-template-columns:repeat(4, 180px);
+  justify-content:center;
+  gap:28px 42px;
+}
+
+.match-card{
+  width:180px;
+  height:170px;
+  padding:14px;
+  border-radius:12px;
+  background:rgba(255,255,255,0.45);
+  backdrop-filter:blur(7px);
+  color:black;
+  font-weight:bold;
+}
+
+.match-card h2{
+  font-size:17px;
+  letter-spacing:5px;
   margin-bottom:10px;
 }
 
-.edit-btn{
-  margin-bottom:20px;
+.match-card p{
+  font-size:10px;
+  margin-bottom:10px;
 }
 
-.perfil-card{
-  background:rgba(255,255,255,0.75);
-  color:black;
-  padding:20px;
-  border-radius:18px;
-  margin-bottom:20px;
-  font-weight:bold;
-}
-
-/* COMENTARIOS */
-
-.comments-container{
-  width:80%;
-  margin:130px auto 0;
-  display:flex;
-  justify-content:space-around;
-  align-items:center;
-}
-
-.comments-box{
-  width:420px;
-  height:320px;
-  background:rgba(255,255,255,0.8);
-  border-radius:20px;
-  padding:35px;
-}
-
-.comment-line{
-  height:25px;
-  background:#e8dddd;
-  border-radius:20px;
-  margin-bottom:22px;
-}
-
-.comments-title{
-  background:rgba(255,255,255,0.35);
-  backdrop-filter:blur(10px);
-  border-radius:18px;
-  padding:55px;
-}
-
-.comments-title h2{
-  letter-spacing:6px;
-  line-height:1.5;
-}
-
-.volver-btn{
-  position:absolute;
-  bottom:90px;
-  left:50%;
-  transform:translateX(-50%);
-  width:230px;
-  padding:15px;
+.location-button{
+  width:130px;
+  height:38px;
+  margin-top:4px;
   border:none;
-  border-radius:18px;
-  font-weight:bold;
-  letter-spacing:5px;
+  border-radius:8px;
+  background:#e8e8e8;
+  font-size:25px;
   cursor:pointer;
+}
+
+.active-link{
+  border-bottom:4px solid #69c36d;
+  padding-bottom:8px;
 }
