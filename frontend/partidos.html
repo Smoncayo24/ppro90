@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Partidos Disponibles</title>
+
+  <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav class="navbar">
+
+    <a href="index.html">Inicio</a>
+
+    <a href="partidos.html" class="active-link">
+      Partidos Disponibles
+    </a>
+
+    <a href="#">Crear partido</a>
+
+    <a href="#">Buscar jugadores</a>
+
+    <a href="#">Buscar Grupos</a>
+
+    <a href="#">Crear Grupo</a>
+
+    <div class="profile-circle"></div>
+
+  </nav>
+
+  <!-- TITULO -->
+
+  <h1 class="matches-title">
+    Partidos <br>
+    Disponibles
+  </h1>
+
+  <!-- BOTONES -->
+
+  <div class="tabs">
+
+    <button
+      id="todayBtn"
+      class="active-tab"
+      onclick="showTodayMatches()"
+    >
+      Hoy
+    </button>
+
+    <button
+      id="weekBtn"
+      onclick="showWeekMatches()"
+    >
+      Semana
+    </button>
+
+  </div>
+
+  <!-- CONTENEDOR -->
+
+  <div id="matchesContainer" class="matches-grid">
+
+  </div>
+
+  <script src="./js/matches.js"></script>
+
+</body>
+</html>

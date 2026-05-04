@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SintApp Login</title>
+
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- LOGO -->
+    <div class="logo-section">
+      <img src="./assets/logo.png" alt="logo">
+    </div>
+
+    <!-- LOGIN -->
+    <div class="login-box">
+
+      <h1>Bienvenido <br> a SintApp</h1>
+
+      <input
+        type="email"
+        id="email"
+        placeholder="Ingresar usuario"
+      >
+
+      <input
+        type="password"
+        id="password"
+        placeholder="Ingresa contraseña"
+      >
+
+      <button onclick="login()">
+        inicia sesion
+      </button>
+
+      <p>
+        No tienes cuenta ?
+        <a href="signup.html">
+          registrate aqui
+        </a>
+      </p>
+
+    </div>
+
+  </div>
+
+  <script src="./js/login.js"></script>
+
+</body>
+</html>

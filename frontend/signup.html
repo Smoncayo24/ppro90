@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sign Up</title>
+
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+  <!-- BOTON VOLVER -->
+  <a href="login.html" class="back-button">
+    ←
+  </a>
+
+  <div class="signup-container">
+
+    <div class="signup-box">
+
+      <h1>Crea tu cuenta</h1>
+
+      <input
+        type="email"
+        id="email"
+        placeholder="Correo electronico"
+      >
+
+      <input
+        type="text"
+        id="username"
+        placeholder="Ingresar usuario"
+      >
+
+      <input
+        type="password"
+        id="password"
+        placeholder="Ingresa contraseña"
+      >
+
+      <input
+        type="password"
+        id="confirmPassword"
+        placeholder="Confirmar contraseña"
+      >
+
+      <button onclick="signup()">
+        Crear
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src="./js/signup.js"></script>
+
+</body>
+</html>

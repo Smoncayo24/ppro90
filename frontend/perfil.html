@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Perfil</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html">Inicio</a>
+  <a href="partidos.html">Partidos Disponibles</a>
+  <a href="#">Crear partido</a>
+  <a href="#">Buscar jugadores</a>
+  <a href="#">Buscar Grupos</a>
+  <a href="#">Crear Grupo</a>
+  <div class="profile-circle"></div>
+</nav>
+
+<h1 class="profile-title">Mi Perfil</h1>
+
+<section class="perfil-container">
+
+  <div class="perfil-left">
+    <img class="perfil-img" src="./assets/logo.png" alt="perfil">
+
+    <div class="perfil-stats">
+      <button>Amigos: 20</button>
+      <button onclick="window.location.href='comentarios.html'">Comentarios</button>
+    </div>
+
+    <button class="rating">Calificación: ⭐ 10</button>
+  </div>
+
+  <div class="perfil-right">
+    <h2 id="profileName">James Rodriguez</h2>
+
+    <button class="edit-btn">⚙ Editar Perfil</button>
+
+    <div class="perfil-card">
+      Jugador comprometido y puntual. Me gusta jugar en equipo,
+      moverme sin balón y mantener el orden. Busco partidos cerca
+      y gente seria para armar plan fijo.
+    </div>
+
+    <div class="perfil-card">
+      <p>Posición: Delantero (DC)</p>
+      <p>Pie hábil: Derecho</p>
+      <p>🏃 Velocidad / Desmarque: 8/10</p>
+      <p>🎯 Definición: 8/10</p>
+      <p>🤝 Juego en equipo: 9/10</p>
+    </div>
+  </div>
+
+</section>
+
+<script src="./js/perfil.js"></script>
+</body>
+</html>
