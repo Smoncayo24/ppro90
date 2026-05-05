@@ -564,3 +564,623 @@ body {
   border-bottom:4px solid #69c36d;
   padding-bottom:8px;
 }
+
+
+/* grupos */
+
+.groups-title{
+  position:absolute;
+  top:120px;
+  left:70px;
+  color:white;
+  font-size:42px;
+}
+
+.groups-container{
+  width:85%;
+  margin:180px auto 0;
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:35px;
+}
+
+.group-card{
+  background:#d9d9d9;
+  border-radius:8px;
+  padding:18px;
+  height:220px;
+  position:relative;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.group-icon{
+  width:45px;
+  height:45px;
+  background:#999;
+  border-radius:50%;
+  margin-bottom:8px;
+}
+
+.group-card h3{
+  position:absolute;
+  top:18px;
+  left:80px;
+  font-size:14px;
+}
+
+.group-card small{
+  display:block;
+  color:#555;
+  margin-bottom:10px;
+}
+
+.group-card p{
+  font-size:14px;
+}
+
+.group-card button{
+  position:absolute;
+  bottom:15px;
+  left:35px;
+  right:35px;
+  padding:10px;
+  border:none;
+  border-radius:10px;
+  background:#3d9635;
+  color:white;
+  font-weight:bold;
+}
+
+.create-group-big{
+  position:absolute;
+  bottom:95px;
+  left:50%;
+  transform:translateX(-50%);
+  padding:18px 28px;
+  border:none;
+  border-radius:18px;
+  background:#e5e5e5;
+  color:#3d9635;
+  font-size:22px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.next-match{
+  margin:110px auto 25px;
+  width:320px;
+  background:#e5e5e5;
+  padding:18px;
+  border-radius:25px;
+  text-align:center;
+  font-weight:bold;
+}
+
+.group-detail-box{
+  width:380px;
+  height:330px;
+  background:#d9d9d9;
+  border-radius:18px;
+  margin:0 auto;
+  padding:35px;
+}
+
+.comment-line{
+  height:25px;
+  background:#e8dddd;
+  border-radius:20px;
+  margin-bottom:22px;
+}
+
+.volver-btn{
+  display:block;
+  margin:25px auto;
+  width:230px;
+  padding:15px;
+  border:none;
+  border-radius:18px;
+  background:#e5e5e5;
+  font-weight:bold;
+  letter-spacing:5px;
+}
+
+.group-img{
+  width:45px;
+  height:45px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:8px;
+}
+
+/* crear grupo */
+
+.crear-grupo-title{
+  position:absolute;
+  top:100px;
+  width:100%;
+  text-align:center;
+  color:white;
+  font-size:45px;
+}
+
+.crear-grupo-container{
+  width:85%;
+  margin:150px auto 0;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+
+.crear-grupo-left{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:60px;
+}
+
+.upload-circle{
+  width:220px;
+  height:220px;
+  border-radius:50%;
+  background:#d9d9d9;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:120px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.crear-grupo-btn{
+  padding:18px 28px;
+  border:none;
+  border-radius:14px;
+  background:#e5e5e5;
+  color:#3d9635;
+  font-size:22px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.crear-grupo-right{
+  display:flex;
+  flex-direction:column;
+  gap:45px;
+}
+
+.crear-grupo-right input{
+  width:430px;
+  padding:12px;
+  border:none;
+  border-radius:15px;
+  background:#d9d9d9;
+  text-align:center;
+}
+
+.crear-grupo-right textarea{
+  width:430px;
+  height:220px;
+  padding:18px;
+  border:none;
+  border-radius:12px;
+  background:#d9d9d9;
+  resize:none;
+}
+
+
+/* jugadores */
+
+.players-title{
+  position:absolute;
+  top:105px;
+  width:100%;
+  text-align:center;
+  color:white;
+  font-size:42px;
+}
+
+.players-search{
+  position:absolute;
+  top:175px;
+  left:50%;
+  transform:translateX(-50%);
+  width:330px;
+  padding:8px 18px;
+  border:none;
+  border-radius:12px;
+  background:#e5e5e5;
+  font-size:16px;
+}
+
+.players-tabs{
+  position:absolute;
+  top:220px;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  gap:35px;
+}
+
+.players-tabs button{
+  padding:10px 18px;
+  border:none;
+  border-radius:8px;
+  background:#e5e5e5;
+  color:#3d9635;
+  font-weight:bold;
+}
+
+.players-tabs .active-tab{
+  background:#4CAF50;
+  color:white;
+}
+
+.players-container{
+  width:82%;
+  margin:280px auto 0;
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:28px 80px;
+}
+
+.player-general-card{
+  background:#d9d9d9;
+  border-radius:18px;
+  padding:12px 20px;
+  display:flex;
+  align-items:center;
+  gap:25px;
+  font-size:20px;
+  font-style:italic;
+}
+
+.player-general-img{
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+.player-featured-card{
+  background:#d9d9d9;
+  border-radius:6px;
+  padding:20px;
+  display:flex;
+  gap:18px;
+  font-size:11px;
+  font-style:italic;
+}
+
+.player-featured-img{
+  width:85px;
+  height:85px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+.player-featured-card h4{
+  margin-bottom:8px;
+}
+
+
+/* jugadores perfil */
+
+.perfil-jugador-page{
+  width:80%;
+  margin:190px auto 0;
+  display:flex;
+  justify-content:center;
+  gap:90px;
+}
+
+.perfil-jugador-img{
+  width:230px;
+  height:230px;
+  border-radius:50%;
+  object-fit:cover;
+  background:white;
+}
+
+.perfil-jugador-left{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:15px;
+}
+
+.volver-player,
+.perfil-rating,
+.seguir-btn{
+  border:none;
+  border-radius:12px;
+  background:#d9d9d9;
+  padding:6px 35px;
+  cursor:pointer;
+}
+
+.volver-player{
+  width:220px;
+  letter-spacing:6px;
+}
+
+.perfil-mini-boxes{
+  display:flex;
+  gap:20px;
+}
+
+.perfil-mini-boxes div{
+  width:100px;
+  height:60px;
+  background:#d9d9d9;
+  border-radius:15px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  font-size:11px;
+}
+
+.perfil-rating{
+  width:220px;
+  font-size:12px;
+}
+
+.perfil-jugador-right{
+  width:360px;
+  color:white;
+}
+
+.perfil-jugador-right h2{
+  font-size:28px;
+  font-style:italic;
+  margin-bottom:8px;
+}
+
+.seguir-btn{
+  width:120px;
+  padding:4px;
+  margin-bottom:35px;
+}
+
+.perfil-text-box{
+  background:#d9d9d9;
+  color:black;
+  border-radius:15px;
+  padding:16px;
+  margin-bottom:15px;
+  font-size:16px;
+}
+
+.profile-circle{
+  position:absolute;
+  right:30px;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  overflow:hidden; /* 🔥 clave */
+  cursor:pointer;
+  border:2px solid white;
+}
+
+.profile-circle img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.navbar{
+  width:100%;
+  height:70px;
+  background:linear-gradient(to right, #0f3d0f, #1c6b1c);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:40px;
+  position:fixed;
+  top:0;
+  z-index:1000;
+}
+
+.navbar a{
+  color:white;
+  text-decoration:none;
+  font-size:14px;
+  position:relative;
+}
+
+/* línea verde */
+.navbar a::after{
+  content:"";
+  position:absolute;
+  bottom:-10px;
+  left:0;
+  width:0%;
+  height:3px;
+  background:#4CAF50;
+  transition:0.3s;
+}
+
+/* hover */
+.navbar a:hover::after{
+  width:100%;
+}
+
+/* activo */
+.navbar a.active::after{
+  width:100%;
+}
+
+/* perfil */
+.profile-circle{
+  position:absolute;
+  right:30px;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  overflow:hidden;
+  cursor:pointer;
+  border:2px solid white;
+}
+
+.profile-circle img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* crear partido */
+
+.crear-partido-body{
+  background:#1f1f1f;
+  margin:0;
+}
+
+.crear-partido-body{
+  margin:0;
+  min-height:100vh;
+  background:url("./assets/campo.jpg") center center / cover no-repeat;
+}
+
+.crear-partido-page{
+  padding-top:90px;
+}
+
+
+.crear-partido-box{
+  width:75%;        
+  max-width:1100px;
+  margin:60px auto;
+  background:rgba(220,220,220,0.65);
+  border-radius:15px;
+  padding:50px 80px;    
+}
+
+.crear-partido-box h1{
+  text-align:center;
+  font-size:44px;
+  color:black;
+  margin:0 0 35px;
+}
+
+.crear-partido-content{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;  
+  gap:80px;              
+}
+
+
+.form-partido{
+  width:380px; /* antes 300 */
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px 30px;
+}
+
+
+.form-partido select{
+  height:30px;       /* antes 22 */
+  font-size:13px;    /* más legible */
+  border-radius:15px;
+}
+
+
+
+.calendar{
+  width:300px;  /* antes 250 */
+  padding:20px;
+}
+.crear-partido-box h1{
+  font-size:52px;
+  margin-bottom:40px;
+}
+.calendario-box h2{
+  color:black;
+  font-size:25px;
+  margin-bottom:25px;
+}
+
+.calendar{
+  width:250px;
+  background:#e5e5e5;
+  border-radius:18px;
+  padding:15px;
+}
+
+.days,
+.calendar-days{
+  display:grid;
+  grid-template-columns:repeat(7, 1fr);
+  gap:9px;
+  text-align:center;
+  font-size:12px;
+}
+
+.calendar-days button{
+  border:none;
+  background:transparent;
+  cursor:pointer;
+  font-size:11px;
+}
+
+.form-partido{
+  width:330px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:55px 25px;
+}
+
+.form-partido select{
+  height:22px;
+  border:none;
+  border-radius:12px;
+  background:#e5e5e5;
+  font-style:italic;
+  font-size:11px;
+  text-align:center;
+}
+
+.select-wide{
+  grid-column:1 / 3;
+  width:100%;
+}
+
+.crear-partido-btn{
+  position:absolute;
+  bottom:-25px;
+  left:50%;
+  transform:translateX(-50%);
+  width:150px;
+  height:55px;
+  border:none;
+  border-radius:18px;
+  background:#e5e5e5;
+  color:#3d9635;
+  font-size:20px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.selected-day{
+  background:#4CAF50 !important;
+  color:white;
+  border-radius:50%;
+}
+
+html, body{
+  margin:0;
+  min-height:100vh;
+}
+
+.crear-partido-body{
+  margin:0;
+  min-height:100vh;
+  background:url("../assets/campo.jpg") center center / cover no-repeat !important;
+}
+
+.crear-partido-page{
+  min-height:100vh;
+  padding-top:120px;
+  background:transparent !important;
+}

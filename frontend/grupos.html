@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Buscar Grupos</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html">Inicio</a>
+  <a href="partidos.html">Partidos Disponibles</a>
+  <a href="crearPartido.html">Crear partido</a>
+  <a href="jugadores.html">Buscar jugadores</a>
+  <a href="grupos.html" class="active">Buscar Grupos</a>
+  <a href="crearGrupo.html">Crear Grupo</a>
+
+  <div class="profile-circle" onclick="window.location.href='perfil.html'">
+    <img src="./assets/james.png">
+  </div>
+</nav>
+    
+
+<h1 class="groups-title">Buscar Grupos</h1>
+
+<section id="groupsContainer" class="groups-container"></section>
+
+<button class="create-group-big" onclick="window.location.href='crearGrupo.html'">
+  CREA TU GRUPO
+</button>
+
+<script src="./js/grupos.js"></script>
+</body>
+</html>

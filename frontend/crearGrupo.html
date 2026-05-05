@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Crear Grupo</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html">Inicio</a>
+  <a href="partidos.html">Partidos Disponibles</a>
+  <a href="crearPartido.html">Crear partido</a>
+  <a href="jugadores.html">Buscar jugadores</a>
+  <a href="grupos.html">Buscar Grupos</a>
+  <a href="crearGrupo.html" class="active">Crear Grupo</a>
+
+  <div class="profile-circle" onclick="window.location.href='perfil.html'">
+    <img src="./assets/james.png">
+  </div>
+</nav>
+
+<h1 class="crear-grupo-title">Crear Grupo</h1>
+
+<section class="crear-grupo-container">
+
+  <div class="crear-grupo-left">
+    <label for="imagenGrupo" class="upload-circle">
+      +
+    </label>
+
+    <input type="file" id="imagenGrupo" accept="image/*" hidden>
+
+    <button class="crear-grupo-btn" onclick="crearGrupo()">
+      Crear Grupo
+    </button>
+  </div>
+
+  <div class="crear-grupo-right">
+    <input id="nombreGrupo" type="text" placeholder="Ingresa el nombre del grupo">
+
+    <input id="abreviacionGrupo" type="text" placeholder="Abreviación">
+
+    <textarea id="descripcionGrupo" placeholder="Ingresa la descripción del grupo"></textarea>
+  </div>
+
+</section>
+
+<script src="./js/crearGrupo.js"></script>
+</body>
+</html>

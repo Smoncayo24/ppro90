@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Crear Partido</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="crear-partido-body">
+
+<nav class="navbar">
+  <a href="index.html">Inicio</a>
+  <a href="partidos.html">Partidos Disponibles</a>
+  <a href="crearPartido.html" class="active">Crear partido</a>
+  <a href="jugadores.html">Buscar jugadores</a>
+  <a href="grupos.html">Buscar Grupos</a>
+  <a href="crearGrupo.html">Crear Grupo</a>
+
+  <div class="profile-circle" onclick="window.location.href='perfil.html'">
+    <img src="./assets/james.png">
+  </div>
+</nav>
+
+<main class="crear-partido-page">
+
+  <section class="crear-partido-box">
+    <h1>Crea tu partido</h1>
+
+    <div class="crear-partido-content">
+
+      <!-- IZQUIERDA -->
+      <div class="calendario-box">
+        <h2>Que dia sera<br>el partido?</h2>
+
+        <div class="calendar">
+          <div class="days">
+            <strong>DO</strong><strong>LU</strong><strong>MA</strong>
+            <strong>MI</strong><strong>JU</strong><strong>VI</strong><strong>SA</strong>
+          </div>
+
+          <div id="calendarDays" class="calendar-days"></div>
+        </div>
+      </div>
+
+      <!-- DERECHA -->
+      <div class="form-partido">
+        <select id="hora">
+          <option value="">Hora</option>
+          <option>6:00 am</option>
+          <option>6:15 am</option>
+          <option>6:30 am</option>
+          <option>6:45 am</option>
+          <option>7:00 am</option>
+        </select>
+
+        <select id="formato">
+          <option value="">Formato</option>
+          <option>5 vs 5</option>
+          <option>6 vs 6</option>
+          <option>7 vs 7</option>
+        </select>
+
+        <select id="jugadoresFaltan" class="select-wide">
+          <option value="">Cuantos jugadores faltan?</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+        </select>
+
+        <select id="cancha" class="select-wide">
+          <option value="">En que cancha se va a realizar</option>
+          <option>Camp Nou</option>
+          <option>Olímpico</option>
+          <option>Palmas</option>
+        </select>
+      </div>
+
+    </div>
+
+    <button class="crear-partido-btn" onclick="crearPartido()">Crear</button>
+
+  </section>
+
+</main>
+
+<script src="./js/crearPartido.js"></script>
+</body>
+</html>

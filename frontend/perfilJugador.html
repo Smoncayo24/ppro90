@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Perfil Jugador</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html">Inicio</a>
+  <a href="partidos.html">Partidos Disponibles</a>
+  <a href="crearPartido.html">Crear partido</a>
+  <a href="jugadores.html" class="active">Buscar jugadores</a>
+  <a href="grupos.html">Buscar Grupos</a>
+  <a href="crearGrupo.html">Crear Grupo</a>
+
+  <div class="profile-circle" onclick="window.location.href='perfil.html'">
+    <img src="./assets/james.png">
+  </div>
+</nav>
+<h1 class="players-title">Buscar jugadores</h1>
+
+<section id="perfilJugador" class="perfil-jugador-page"></section>
+
+<script>
+const jugador = JSON.parse(localStorage.getItem("jugadorSeleccionado"));
+
+document.getElementById("perfilJugador").innerHTML = `
+  <div class="perfil-jugador-left">
+    <img src="./assets/${jugador.imagen}" class="perfil-jugador-img">
+
+    <button class="volver-player" onclick="window.location.href='jugadores.html'">VOLVER</button>
+
+    <div class="perfil-mini-boxes">
+      <div>Amigos: ${jugador.amigos || 0}<br>Seguidores: ${jugador.seguidores || 0}</div>
+      <div>Comentarios</div>
+    </div>
+
+    <div class="perfil-rating">Calificación: ⭐ ${jugador.calificacion}</div>
+  </div>
+
+  <div class="perfil-jugador-right">
+    <h2>${jugador.nombre}</h2>
+    <button class="seguir-btn">Seguir</button>
+
+    <div class="perfil-text-box">${jugador.descripcion}</div>
+
+    <div class="perfil-text-box">
+      Posición: ${jugador.posicion}<br>
+      ${jugador.stats}
+    </div>
+  </div>
+`;
+</script>
+
+</body>
+</html>

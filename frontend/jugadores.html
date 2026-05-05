@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Buscar jugadores</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html">Inicio</a>
+  <a href="partidos.html">Partidos Disponibles</a>
+  <a href="crearPartido.html">Crear partido</a>
+  <a href="jugadores.html" class="active">Buscar jugadores</a>
+  <a href="grupos.html">Buscar Grupos</a>
+  <a href="crearGrupo.html">Crear Grupo</a>
+
+  <div class="profile-circle" onclick="window.location.href='perfil.html'">
+    <img src="./assets/james.png">
+  </div>
+</nav>
+
+<h1 class="players-title">Buscar jugadores</h1>
+
+<input id="searchInput" class="players-search" placeholder="🔍">
+
+<div class="players-tabs">
+  <button id="destacadosBtn" class="active-tab">Destacados</button>
+  <button id="generalBtn">General</button>
+</div>
+
+<section id="playersContainer" class="players-container"></section>
+
+<script src="./js/jugadores.js"></script>
+</body>
+</html>
